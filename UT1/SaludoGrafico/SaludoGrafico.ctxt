@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=SaludoGrafico
+comment0.text=\r\n\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment1.text=\r\n\ \r\n\r\n\ @param\ \ stage\ el\ escenario\ \r\n
+comment2.params=
+comment2.target=javafx.scene.layout.BorderPane\ crearGui()
+comment3.params=
+comment3.target=void\ salir()
+comment3.text=\r\n\ \r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
