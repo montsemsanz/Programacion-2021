@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Dibujo
+comment0.text=\r\n\ Esta\ clase\ representa\ un\ dibujo\ simple.\ Se\ puede\ realizar\ el\ dibujo\r\n\ utilizando\ el\ m\u00E9todo\ dibujar().\ Como\ es\ un\ dibujo\ electr\u00F3nico,\ puede\ cambiar.\ \r\n\ Se\ puede\ ver\ en\ negro\ y\ blanco\ y\ en\ color\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ y\ David.J.\ Barnes\r\n
+comment1.params=
+comment1.target=Dibujo()
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Dibujo\r\n
+comment2.params=
+comment2.target=void\ dibujar()
+comment2.text=\r\n\ Realizar\ el\ dibujo\r\n
+comment3.params=
+comment3.target=void\ setNegroBlanco()
+comment3.text=\r\n\ Cambiar\ dibujo\ a\ negro/blanco\r\n
+comment4.params=
+comment4.target=void\ setColor()
+comment4.text=\r\n\ Cambiar\ dibujo\ para\ ver\ en\ modo\ color\r\n
+numComments=5

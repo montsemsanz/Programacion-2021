@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Laboratorio
+comment0.text=\r\n\ La\ clase\ LabClase\ representa\ una\ lista\ de\ alumnos\r\n\ que\ se\ han\ matriculado\ en\ una\ clase\ laboratorio.\r\n\ Almacena\ la\ hora,\ aula\ y\ participantes\ en\ el\ laboratorio,\r\n\ as\u00ED\ como\ el\ nombre\ del\ profesor\r\n
+comment1.params=maxNumeroEstudiantes
+comment1.target=Laboratorio(int)
+comment1.text=\r\n\ crear\ un\ objeto\ de\ la\ clase\ Laboratorio\ con\ el\ m\u00E1ximo\ n\u00BA\ de\ \r\n\ alumnos\ que\ pueden\ matricularse.\ El\ resto\ de\ valores\ se\ inician\ \r\n\ con\ los\ valores\ por\ defecto\r\n
+comment2.params=nuevoEstudiante
+comment2.target=void\ matricularEstudiante(Estudiante)
+comment2.text=\r\n\ A\u00F1adir\ un\ estudiante\ a\ la\ lista\ de\ clase\r\n
+comment3.params=
+comment3.target=int\ numeroEstudiantes()
+comment3.text=\r\n\ Devolver\ el\ n\u00BA\ de\ estudianes\ actualmente\ matriculados\r\n
+comment4.params=queAula
+comment4.target=void\ setAula(java.lang.String)
+comment4.text=\r\n\ establecer\ el\ aula\r\n
+comment5.params=queHorario
+comment5.target=void\ setHorario(java.lang.String)
+comment5.text=\r\n\ Establecer\ el\ horario\ para\ esta\ clase.\ El\ par\u00E1metro\r\n\ define\ el\ d\u00EDa\ y\ la\ hora\ "Viernes,\ 10\ a.m."\r\n
+comment6.params=queProfesor
+comment6.target=void\ setProfesor(java.lang.String)
+comment6.text=\r\n\ Establecer\ el\ profesor\r\n
+comment7.params=
+comment7.target=void\ escribirLista()
+comment7.text=\r\n\ Escribe\ la\ lista\ de\ estudiantes\ del\ laboratorio\ \r\n\ en\ el\ terminal.\r\n
+numComments=8
