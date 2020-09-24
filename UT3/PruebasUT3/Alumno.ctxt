@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Alumno
+comment0.text=\r\n\ \r\n
+comment1.params=queNombre\ queNota
+comment1.target=Alumno(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment2.text=\r\n\ \ Accesor\ para\ el\ nombre\r\n
+comment3.params=
+comment3.target=int\ getNota()
+comment3.text=\r\n\ \ Accesor\ para\ la\ nota\r\n\r\n
+comment4.params=
+comment4.target=boolean\ haAprobado()
+comment4.text=\r\n\ \ Devuelve\ true\ si\ ha\ aprobado,\ false\ en\ otro\ caso\r\n\r\n
+comment5.params=
+comment5.target=void\ mostrarAlumno()
+comment5.text=\r\n\ \ Muestra\ en\ pantalla\ los\ datos\ del\ alumno\r\n\r\n
+numComments=6

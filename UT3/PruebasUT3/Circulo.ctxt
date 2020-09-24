@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ \ \r\n\ Modela\ c\u00EDrculos\ de\ un\ radio\ determinado\r\n
+comment1.params=queRadio
+comment1.target=Circulo(double)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=double\ getRadio()
+comment2.text=\r\n\ \ accesor\ para\ el\ radio\r\n
+comment3.params=queRadio
+comment3.target=void\ setRadio(double)
+comment3.text=\r\n\ \ mutador\ para\ el\ radio\r\n
+comment4.params=
+comment4.target=double\ calcularAreaV1()
+comment4.text=\r\n\ \ calcular\ el\ \u00E1rea\r\n
+comment5.params=
+comment5.target=double\ calcularAreaV2()
+comment5.text=\r\n\ \ calcular\ el\ \u00E1rea\r\n
+comment6.params=
+comment6.target=double\ calcularPerimetro()
+comment6.text=\r\n\ \ calcular\ el\ per\u00EDmetro\r\n
+comment7.params=
+comment7.target=void\ printDatosCirculo()
+comment7.text=\r\n\ \ mostrar\ en\ pantalla\ los\ datos\ del\ c\u00EDrculo\r\n
+numComments=8

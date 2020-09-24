@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Intercambio
+comment0.text=\r\n\ \ \r\n\ \r\n\ @author\ \ \r\n\ @version\ \ \r\n
+comment1.params=queA\ queB
+comment1.target=Intercambio(int,\ int)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=void\ intercambiarV0()
+comment2.text=\r\n\ \ sin\ variable\ local\r\n
+comment3.params=
+comment3.target=void\ intercambiar()
+comment3.text=\r\n\ \ con\ variable\ local\r\n
+comment4.params=
+comment4.target=void\ promptAntes()
+comment4.text=\r\n\ \ \r\n
+comment5.params=
+comment5.target=void\ promptDespues()
+comment5.text=\r\n\ \ \r\n
+comment6.params=
+comment6.target=void\ escribir()
+comment6.text=\r\n\ \ \r\n
+numComments=7

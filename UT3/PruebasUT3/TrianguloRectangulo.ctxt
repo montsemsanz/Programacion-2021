@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TrianguloRectangulo
+comment0.text=\r\n\ \ \ Modela\ un\ tri\u00E1ngulo\ rect\u00E1ngulo\r\n\ \ \ con\ dos\ catetos\r\n
+comment1.params=queCateto1\ queCateto2
+comment1.target=TrianguloRectangulo(double,\ double)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=double\ getCateto1()
+comment2.text=\r\n\ \ accesor\ para\ el\ cateto\ 1\r\n
+comment3.params=
+comment3.target=double\ getCateto2()
+comment3.text=\r\n\ \ accesor\ para\ el\ cateto\ 2\r\n
+comment4.params=queCateto1
+comment4.target=void\ setCateto1(double)
+comment4.text=\r\n\ \ mutador\ para\ el\ cateto1\r\n
+comment5.params=queCateto2
+comment5.target=void\ setCateto2(double)
+comment5.text=\r\n\ \ mutador\ para\ el\ cateto2\r\n
+comment6.params=
+comment6.target=double\ obtenerHipotenusa()
+comment6.text=\r\n\ \ obtener\ hipotenusa\r\n
+numComments=7

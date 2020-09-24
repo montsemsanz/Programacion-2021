@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Bombilla
+comment0.text=\r\n\ \ Modela\ una\ bombilla\r\n\ \ \r\n
+comment1.params=quePotencia
+comment1.target=Bombilla(java.lang.String)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getPotencia()
+comment2.text=\r\n\ \ accesor\ para\ la\ potencia\r\n
+comment3.params=
+comment3.target=boolean\ getEstado()
+comment3.text=\r\n\ \ accesor\ para\ el\ estado\r\n
+comment4.params=
+comment4.target=void\ cambiarEstado()
+comment4.text=\r\n\ \ \r\n
+comment5.params=
+comment5.target=boolean\ estaEncendida()
+comment5.text=\r\n\ \ \r\n
+comment6.params=
+comment6.target=boolean\ estaApagada()
+comment6.text=\r\n\ \ \r\n
+comment7.params=
+comment7.target=void\ printDatosBombilla()
+comment7.text=\r\n\ \ mostrar\ en\ pantalla\ los\ datos\ de\ la\ bombilla\r\n
+numComments=8
