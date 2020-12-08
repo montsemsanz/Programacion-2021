@@ -57,11 +57,11 @@ public class EjemplosArrays
     /**
      * Búsqueda lineal
      */
-    public boolean  buscarLineal(int[ ] numeros, int valorBuscado)
+    public boolean  buscarLineal(int[] numeros, int valorBuscado)
     {
         boolean encontrado = false;
         int i = 0;
-        while  (i < numeros.length  &&  ! encontrado)    {   
+        while  (i < numeros.length  &&  !encontrado)  {   
             if (numeros[i] == valorBuscado)   {
                 encontrado = true;
             }
@@ -75,12 +75,12 @@ public class EjemplosArrays
     /**
      * Búsqueda lineal
      */
-    public boolean  buscarLinealV2(int[ ] numeros, int valorBuscado)
+    public boolean  buscarLinealV2(int[] numeros, int valorBuscado)
     {
 
         int i = 0;
-        while  (i < numeros.length)      {   
-            if (numeros[i] == valorBuscado)         {
+        while  (i < numeros.length)  {   
+            if (numeros[i] == valorBuscado)   {
                 return true;
             }
             else   {
@@ -89,18 +89,30 @@ public class EjemplosArrays
         }
         return false;
     }
+    
+     /**
+     * Búsqueda lineal
+     */
+    public boolean  buscarLinealV3(int[] numeros, int valorBuscado)
+    {
+        for  (int i = 0; i < numeros.length; i++)  {   
+            if (numeros[i] == valorBuscado)   {
+                return true;
+            }
+        }
+        return false;
+    }
 
     /**
      * Búsqueda dicotómica o binaria
      */
-    public boolean  buscarDicotomica(int[ ] numeros, int valorBuscado)
+    public boolean  buscarDicotomica(int[] numeros, int valorBuscado)
     {
         boolean encontrado = false;
         int izquierda = 0;
         int derecha = numeros.length - 1;
         int mitad;
-        while  (izquierda<= derecha  &&  ! encontrado)
-        {
+        while  (izquierda <= derecha  &&  !encontrado)    {
             mitad = (izquierda + derecha) / 2;
             if (numeros[mitad] == valorBuscado)  {
                 encontrado = true;
@@ -124,7 +136,7 @@ public class EjemplosArrays
         int izquierda = 0;
         int derecha = numeros.length - 1;
         int mitad;
-        while  (izquierda<= derecha)      {
+        while  (izquierda <= derecha)   {
             mitad = (izquierda + derecha) / 2;
             if (numeros[mitad] == valorBuscado)    {
                 return true;
@@ -142,7 +154,7 @@ public class EjemplosArrays
     /**
      * Búsqueda dicotómica o binaria
      */
-    public boolean  buscarDicotomicaV3(int[ ] numeros, int valorBuscado)
+    public boolean  buscarDicotomicaV3(int[] numeros, int valorBuscado)
     {
         Arrays.sort(numeros);
         int p = Arrays.binarySearch(numeros, valorBuscado);
