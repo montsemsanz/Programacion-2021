@@ -13,13 +13,28 @@ public class AppListaNumeros
      */
     public static void main(String[] args)
     {
-        ListaNumeros lista = new ListaNumeros(10);
-        System.out.println(lista.toString());
+        int[] valores = {3, 7, 9, 12, 14, 17, 19, 2, 5, 8};
+        ListaNumeros lista = new ListaNumeros(valores);
+        System.out.println(lista.toString() + "\n");
 
-        lista.addNumero(10);
-        lista.addNumero(20);
-        lista.addNumero(30);
-        lista.addNumero(40);
-        System.out.println(lista.toString());
+        lista.borrarImpares();
+        System.out.println("Después de borrar impares");
+        System.out.println(lista.toString() + "\n");
+
+        lista.vaciarLista();
+        for (int i = 0; i < valores.length; i++) {
+            lista.insertarEnOrden(valores[i]);            
+        }
+        System.out.println("Después de vaciar e insertar en orden");
+        System.out.println(lista.toString() + "\n");
+
+        System.out.println("Después de borrar el primero");
+        lista.borrar(0);
+        System.out.println(lista.toString() + "\n");
+
+        int valor = 100;
+        System.out.println("Después de insertar en la posición 0 el valor " + valor);
+        lista.insertarEnPosición(valor, 0);
+        System.out.println(lista.toString() + "\n");
     }
 }

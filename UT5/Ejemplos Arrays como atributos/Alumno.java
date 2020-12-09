@@ -23,7 +23,8 @@ public class Alumno
      */
     public void registrarNota(int nota)
     {
-        if (pos < notas.length) {
+        if (pos < notas.length)
+        {
             notas[pos] = nota;
             pos++;
         }
@@ -36,8 +37,10 @@ public class Alumno
     public int totalSuspensos()
     {
         int suspensos = 0; 
-        for (int i = 0; i < pos; i++)     {
-            if (notas[i] < 5)     {
+        for (int i = 0; i < pos; i++)
+        {
+            if (notas[i] < 5)
+            {
                 suspensos ++;
             }
         }
@@ -51,7 +54,8 @@ public class Alumno
     public String toString()
     {
         String str = "\nNombre: " + this.nombre + "\nNotas: ";
-        for (int i = 0; i < pos; i++)     {
+        for (int i = 0; i < pos; i++)
+        {
             str += notas[i] + "\t";
         }
         return str;

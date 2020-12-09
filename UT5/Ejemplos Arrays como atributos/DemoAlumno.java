@@ -18,7 +18,7 @@ public class DemoAlumno
         String nombre = teclado.nextLine();
         Alumno alumno1 = new Alumno(nombre);
         // pedimos sus asignatutra y las registramos
-        for (int n = 1; n <= Alumno.MAX_ASIGNATURAS; n++)     {
+        for (int n = 1; n <= Alumno.MAX_ASIGNATURAS; n++)        {
             System.out.print("Dame nota " + n + " del alumno/a: ");
             int nota = teclado.nextInt();
             alumno1.registrarNota(nota);

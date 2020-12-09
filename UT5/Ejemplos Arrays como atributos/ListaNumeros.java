@@ -58,6 +58,13 @@ public class ListaNumeros
         }
         return str;
     }
+    
+    /**
+     * 
+     */
+    public void escribirLista() {
+        System.out.println(this.toString());
+    }
 
     /**
      * Comprueba si la lista de números está completa o no
@@ -66,77 +73,12 @@ public class ListaNumeros
     {
         return pos == numeros.length;
     }
-
+    
     /**
-     * Añadir un nº a la lista en una posición
+     * 
      */
-    public void insertarEnPosición(int valor, int p)
-    {
-        if (!estaLlena())     {   
-            if (p >= 0 && p <= pos)     {
-                for (int i = pos - 1; i >= p; i--)    {
-                    numeros[i + 1] = numeros[i];
-                }
-                numeros[p] = valor;
-                pos++;
-            }
-        }
-    }
-
-    /**
-     * Añadir un nº a la lista en una posición
-     */
-    public void insertarEnPosiciónV2(int valor, int p)
-    {
-        if (!estaLlena())    {   
-            if (p >= 0 && p <= pos)  {
-                System.arraycopy(numeros, p, numeros, p + 1, pos - p);
-                numeros[p] = valor;
-                pos++;
-            }
-        }
-    }
-
-
-    /**
-     * Añadir un nº a la lista de forma que quede ordenada
-     */
-    public void insertarEnOrden(int valor)
-    {
-        if (!estaLlena())    {   
-            // buscar posición para insertar al tiempo que se desplzan los números a la derecha
-            int j = pos - 1;
-            while (j >= 0 && numeros[j] > valor)   {
-                numeros[j + 1] = numeros[j];
-                j = j - 1;
-            }
-            numeros[j + 1] = valor;
-            pos++;
-        }
-    }
-
-    /**
-     * Añadir un nº a la lista de forma que quede ordenada menos eficiente
-     * Los dos pasos separados: 1 - buscar hueco 2 - desplazar a la derecha
-     */
-    public void insertarEnOrdenV2(int valor)
-    {
-        if (!estaLlena())   {   
-            // buscar hueco para valor
-            int i = 0;
-            while (i < pos && numeros[i] <= valor)   {
-                i++;
-            }
-
-            // desplazar a la derecha 
-            int j = pos - 1;
-            while (j >= i)   {
-                numeros[j + 1] = numeros[j];
-                j --;
-            }
-            numeros[i] = valor;
-            pos++;
-        }
+    public void vaciarLista() {
+        this.pos = 0;
     }
 
     /**
@@ -147,7 +89,7 @@ public class ListaNumeros
         if (posicion >= 0 && posicion < pos)   {   
             for (int i = posicion + 1; i < pos; i++) {
                 numeros[i - 1] = numeros[i];
-			}
+            }
             pos--;
 
         }
@@ -218,5 +160,78 @@ public class ListaNumeros
         }
     }
 
-   
+    /**
+     * Añadir un nº a la lista en una posición
+     */
+    public void insertarEnPosición(int valor, int p)
+    {
+        if (!estaLlena())     {   
+            if (p >= 0 && p <= pos)     {
+                for (int i = pos - 1; i >= p; i--)    {
+                    numeros[i + 1] = numeros[i];
+                }
+                numeros[p] = valor;
+                pos++;
+            }
+        }
+    }
+
+    /**
+     * Añadir un nº a la lista en una posición
+     */
+    public void insertarEnPosiciónV2(int valor, int p)
+    {
+        if (!estaLlena())    {   
+            if (p >= 0 && p <= pos)  {
+                System.arraycopy(numeros, p, numeros, p + 1, pos - p);
+                numeros[p] = valor;
+                pos++;
+            }
+        }
+    }
+
+    /**
+     * Añadir un nº a la lista de forma que quede ordenada
+     */
+    public void insertarEnOrden(int valor)
+    {
+        if (!estaLlena())    {   
+            // buscar posición para insertar al tiempo que se desplzan los números a la derecha
+            int j = pos - 1;
+            while (j >= 0 && numeros[j] > valor)   {
+                numeros[j + 1] = numeros[j];
+                j = j - 1;
+            }
+            numeros[j + 1] = valor;
+            pos++;
+        }
+    }
+
+    /**
+     * Añadir un nº a la lista de forma que quede ordenada menos eficiente
+     * Los dos pasos separados: 1 - buscar hueco 2 - desplazar a la derecha
+     */
+    public void insertarEnOrdenV2(int valor)
+    {
+        if (!estaLlena())   {   
+            // buscar hueco para valor
+            int i = 0;
+            while (i < pos && numeros[i] <= valor)   {
+                i++;
+            }
+
+            // desplazar a la derecha 
+            int j = pos - 1;
+            while (j >= i)   {
+                numeros[j + 1] = numeros[j];
+                j --;
+            }
+            numeros[i] = valor;
+            pos++;
+        }
+    }
+
+    
+ 
+
 }
