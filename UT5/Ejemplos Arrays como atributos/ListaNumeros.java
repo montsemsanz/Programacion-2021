@@ -58,7 +58,7 @@ public class ListaNumeros
         }
         return str;
     }
-    
+
     /**
      * 
      */
@@ -73,7 +73,7 @@ public class ListaNumeros
     {
         return pos == numeros.length;
     }
-    
+
     /**
      * 
      */
@@ -202,6 +202,7 @@ public class ListaNumeros
                 numeros[j + 1] = numeros[j];
                 j = j - 1;
             }
+            // insertar el valor nuevo
             numeros[j + 1] = valor;
             pos++;
         }
@@ -219,19 +220,38 @@ public class ListaNumeros
             while (i < pos && numeros[i] <= valor)   {
                 i++;
             }
-
             // desplazar a la derecha 
             int j = pos - 1;
             while (j >= i)   {
                 numeros[j + 1] = numeros[j];
                 j --;
             }
+            // System.arraycopy(numeros, i, numeros, i + 1, pos - i);
+
+            // insertar el valor nuevo
             numeros[i] = valor;
             pos++;
         }
     }
 
-    
- 
+    /**
+     * Borrar varios elementos - sale bien
+     */
+    public void borrarImparesConForIterador()
+    {
+        int[] valores = new int[]{1,2,3,5,7,9,12};
+        ArrayList<Integer> lista = new ArrayList<Integer>();
+        for (int i = 0; i < valores.length; i++) {
+            lista.add(valores[i]);
+
+        }
+        for (Iterator<Integer> it = lista.iterator(); it.hasNext(); )  {
+            Integer i = it.next();
+            if (i % 2 != 0) {
+                it.remove();
+            }
+        }
+        System.out.println(lista.toString());
+    }
 
 }
