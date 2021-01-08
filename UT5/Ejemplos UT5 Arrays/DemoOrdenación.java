@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 /**
  *  
  */
@@ -29,6 +29,7 @@ public class DemoOrdenación
             array[posmin] = array[i];
             array[i] = aux;
         }
+        System.out.println(Arrays.toString(array));
     }
 
     /**
@@ -45,5 +46,25 @@ public class DemoOrdenación
             }
             array[j + 1] = aux;
         }
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     *  Ordenar en orden ascendente
+     */
+    public void  ordenarBurbuja(int[] array)
+    {
+        for  (int i = 1; i < array.length; i++) {
+            for  (int j = 0; j < array.length - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int aux = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = aux;
+                }
+
+            }
+
+        }
+        System.out.println(Arrays.toString(array));
     }
 }
