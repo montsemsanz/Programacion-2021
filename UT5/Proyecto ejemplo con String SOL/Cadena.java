@@ -663,9 +663,7 @@ public class Cadena
     }
 
     /**
-     *  http://www.ocpsoft.org/opensource/guide-to-regular-expressions-in-java-part-1/
-     *  http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
-     *
+     *    
      */
     public void splitConExpresionesRegulares()
     {
