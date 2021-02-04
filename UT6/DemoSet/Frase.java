@@ -10,20 +10,19 @@ public class Frase
     private TreeSet<String> conjuntoPalabras;
 
     /**
-     *  Constructor  
+     * Constructor  
      * @param frase la frase desde la que extraeremos las palabras
      * Cada palabra está separada por espacios
      */
     public Frase(String frase)
     {
         conjuntoPalabras = new TreeSet<>();
-        String[] palabras = frase.split(" ");
-        for (String p: palabras)    {
-            if (!p.isEmpty())  {
-                conjuntoPalabras.add(p);
-            }
+        String[] palabras = frase.trim().split("\\s+");
+        for (String p: palabras)    {            
+                conjuntoPalabras.add(p);            
         }
 
+        
         // Scanner sc = new Scanner(frase);
         // while (sc.hasNext()) {
             // conjuntoPalabras.add(sc.next());
@@ -46,7 +45,7 @@ public class Frase
      */
     public static void main(String[] args)
     {
-       Frase frase = new Frase("ejemplo de conjuntos   Set");
+       Frase frase = new Frase(" un ejemplo de   un conjunto   Set");
        frase.mostrarFrase();
     }
 

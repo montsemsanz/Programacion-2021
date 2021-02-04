@@ -4,7 +4,7 @@ import java.util.Arrays;
  *  La clase representa a un conjunto de nombres
  *  
  */
-import java.util.LinkedHashSet;
+import java.util.LinkedHashSet; 
 import java.util.HashSet;
 import java.util.TreeSet;
 import java.util.Iterator;
@@ -103,11 +103,9 @@ public class ConjuntoNombres
      */
     public  void escribirConjunto()
     {
-        int num = 1;
         Iterator<String> it = nombres.iterator();
         while (it.hasNext())  {
-            System.out.println(num + " " + it.next());
-            num++;
+            System.out.println(it.next());
         }
     }
 
@@ -117,11 +115,9 @@ public class ConjuntoNombres
     public  void escribirConjuntoConFor()
     {
         // System.out.println(nombres.toString());
-        int num = 1;
 
         for (String nombre: nombres) {
-            System.out.println(num + " " + nombre);
-            num++;
+            System.out.println(nombre);
         }
     }
 
@@ -136,17 +132,17 @@ public class ConjuntoNombres
             conjunto.addNombre(nombre);
         }
         conjunto.escribirConjunto();
+        System.out.println("-------------------------");
 
         String nombre = "julio";
         System.out.println("Esta el nombre " + nombre + "? " + conjunto.estaNombre(nombre));
-
-        //   HashSet<String> otro = new HashSet<String>(Arrays.asList("pedro", "ana"));
-
         System.out.println("-------------------------");
+
+        
+        //   HashSet<String> otro = new HashSet<String>(Arrays.asList("pedro", "ana"));
         HashSet<String> otro = new HashSet<String>();
         otro.addAll(Arrays.asList("pedro", "ana"));
 
-        System.out.println("-------------------------");
         conjunto.escribirConjunto();
         System.out.println(otro.toString() + "\n");
         HashSet<String> union = conjunto.union(otro);
