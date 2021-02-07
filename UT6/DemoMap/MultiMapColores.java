@@ -1,7 +1,8 @@
 
 /**
  *  
- * Clase que incluye un map que asocia nombre de personas con el conjunto de sus colores favoritos
+ * Clase que incluye un map que asocia nombres de personas 
+ * con el conjunto de sus colores favoritos
  * Ejemplo de uso de un multimap, un map en el que cada clave tiene
  * asociado una colección de valores
  */
@@ -11,6 +12,7 @@ import java.util.TreeSet;
 import java.util.Set;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Collection;
 
 public class MultiMapColores
 {
@@ -125,6 +127,24 @@ public class MultiMapColores
         return cuantos;
 
     }
+    
+     /**
+     * devuelve el nº de personas a las que les gusta el color pasado como parámetro
+     * Con el conjunto de entradas y un iterador
+     */
+    public int personasLesGustaColorV2(String color)
+    {
+        color = color.toLowerCase();
+        int cuantos = 0;
+        Collection<HashSet<String>> coloresPersonas = mapPersonas.values();
+        for (HashSet<String> coloresPersona:coloresPersonas)     {             
+            if (coloresPersona.contains(color))  {
+                cuantos++;
+            }
+        }
+        return cuantos;
+
+    }
 
     /**
      * devuelve un conjunto ordenado con los nombres de las personas a las que les gusta 
@@ -173,16 +193,28 @@ public class MultiMapColores
     {
         persona1 = persona1.toLowerCase();
         persona2 = persona2.toLowerCase();
-        HashSet<String> conjunto = new HashSet<>();
-        if (!mapPersonas.containsKey(persona1))    {
-            return conjunto;
+        HashSet<String> comunes = new HashSet<>();
+        if (!mapPersonas.containsKey(persona1) || !mapPersonas.containsKey(persona2))    {
+            return comunes;
+        }       
+        comunes.addAll(mapPersonas.get(persona1));
+        comunes.retainAll(mapPersonas.get(persona2));
+        return comunes;
+    }
+    
+    public HashSet<String> coloresComunesV2(String persona1, String persona2)
+    {
+        persona1 = persona1.toLowerCase();
+        persona2 = persona2.toLowerCase();
+        HashSet<String> comunes = new HashSet<>();
+        HashSet<String> coloresPersona1 = mapPersonas.get(persona1);
+        HashSet<String> coloresPersona2 = mapPersonas.get(persona2);
+        if (coloresPersona1 == null ||  coloresPersona2 == null) {
+            return comunes;
         }
-        if (!mapPersonas.containsKey(persona2))    {
-            return conjunto;
-        }
-        conjunto.addAll(mapPersonas.get(persona1));
-        conjunto.retainAll(mapPersonas.get(persona2));
-        return conjunto;
+        comunes.addAll(coloresPersona1);
+        comunes.retainAll(coloresPersona2);
+        return comunes;
     }
 
 }
