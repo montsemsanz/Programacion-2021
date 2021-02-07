@@ -1,12 +1,14 @@
 
 /**
  *  DemoFecha   
+ *  https://www.campusmvp.es/recursos/post/como-manejar-correctamente-fechas-en-java-el-paquete-java-time.aspx
  */
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.Month;
+import java.util.Locale;
 
 public class DemoFechaJava8
 {
@@ -49,6 +51,18 @@ public class DemoFechaJava8
         formateador = DateTimeFormatter.ofPattern("dd MMM yyyy");
         String strFecha2 =  fecha2.format(formateador);
         System.out.println(strFecha2);
+
+        /* ----------------------------------------- */
+
+        Locale spanishLocale = new Locale("es", "ES");
+        LocalDate fechaLocal = LocalDate.of(2021, 01, 01);
+        String str = fechaLocal.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy",
+                                            spanishLocale));
+        System.out.println("'2021-01-01' en Spanish: " + str);
+
+        fechaLocal = LocalDate.now();
+        formateador = DateTimeFormatter.ofPattern("dd MMMM yyyy", spanishLocale);
+        System.out.println(fechaLocal.format(formateador));
     }
 
     /**
@@ -85,6 +99,7 @@ public class DemoFechaJava8
         String date = "16/08/2016";
         LocalDate localDate = LocalDate.parse(date, formatter);
         System.out.println(date.toString()); 
+
 
     }
 
