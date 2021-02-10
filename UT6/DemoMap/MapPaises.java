@@ -66,7 +66,6 @@ public class MapPaises
         return mapPaises.containsValue(capital);
     }
 
-
     /**
      * nº de elementos del map
      */
@@ -86,7 +85,8 @@ public class MapPaises
         for (String pais: conjuntoPaises) {
             System.out.println(pais + " - " + mapPaises.get(pais));
         }
-         
+   
+
     }
 
     /**
@@ -140,7 +140,6 @@ public class MapPaises
     {
         return mapPaises.values();
     }
-   
-     
+
 
 }

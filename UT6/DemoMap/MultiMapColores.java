@@ -130,7 +130,7 @@ public class MultiMapColores
     
      /**
      * devuelve el nº de personas a las que les gusta el color pasado como parámetro
-     * Con el conjunto de entradas y un iterador
+     * Con la colección de valores y un for mejorado
      */
     public int personasLesGustaColorV2(String color)
     {
@@ -202,6 +202,11 @@ public class MultiMapColores
         return comunes;
     }
     
+    /**
+     *  Devuelve el conjunto de colores comunes que les gusta a persona1 y persona2
+     *  No importa el orden en el conjunto resultado
+     *  Si no hay colores comunes se devuelve el conjunto vacío
+     */
     public HashSet<String> coloresComunesV2(String persona1, String persona2)
     {
         persona1 = persona1.toLowerCase();

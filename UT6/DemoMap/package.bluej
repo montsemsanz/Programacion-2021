@@ -1,19 +1,19 @@
 #BlueJ package file
-dependency1.from=DemoMultiMapColores
-dependency1.to=MultiMapColores
+dependency1.from=DemoMapPaises
+dependency1.to=MapPaises
 dependency1.type=UsesDependency
-dependency2.from=DemoMapPaises
-dependency2.to=MapPaises
+dependency2.from=DemoMultiMapColores
+dependency2.to=MultiMapColores
 dependency2.type=UsesDependency
 editor.fx.0.height=744
 editor.fx.0.width=1382
 editor.fx.0.x=-8
 editor.fx.0.y=-8
-objectbench.height=94
+objectbench.height=132
 objectbench.width=770
 package.divider.horizontal=0.5772659732540861
-package.divider.vertical=0.843167701863354
-package.editor.height=536
+package.divider.vertical=0.7841614906832298
+package.editor.height=498
 package.editor.width=1226
 package.editor.x=0
 package.editor.y=0
