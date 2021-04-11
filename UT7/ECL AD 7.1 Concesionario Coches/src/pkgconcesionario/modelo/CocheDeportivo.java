@@ -7,8 +7,7 @@ package pkgconcesionario.modelo;
  */
 import java.awt.Point;
 
-public class CocheDeportivo extends Coche
-{
+public class CocheDeportivo extends Coche {
 	//sin atributos, solo los heredados
 
 	public CocheDeportivo(String conductor, String modelo, String color) {
@@ -29,7 +28,7 @@ public class CocheDeportivo extends Coche
 		else {
 			p.translate(30, 0);
 		}
-		setPosicion(p);
+
 	}
 
 }

@@ -6,13 +6,12 @@ package pkgconcesionario.modelo;
  */
 import java.awt.Point;
 
-public class Taxi extends Coche
-{
+public class Taxi extends Coche {
 
 	private int plazas;
 
 	public Taxi(String conductor, String modelo, String color, Point posicion,
-	                int plazas) {
+	                    int plazas) {
 
 		super(conductor, modelo, color, posicion);
 		this.plazas = plazas;
@@ -47,7 +46,7 @@ public class Taxi extends Coche
 		else {
 			p.translate(35, 0);
 		}
-		setPosicion(p);
+
 	}
 
 	/**
