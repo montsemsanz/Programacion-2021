@@ -1,0 +1,26 @@
+.root {
+	-fx-font-family: 'Ubuntu';
+	 -fx-font-size: 14px;
+	
+}
+.label {
+	 
+	-fx-background-color:   radial-gradient( focus-angle 0.0deg, focus-distance 0.0%,
+				center 50.0% 50.0%, radius 100.0%, rgb(255,128,128) 0.0, rgb(0,0,0)) ;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+	 
+	 
+	 
+}
+.button {
+	-fx-background-color: #63AA9C ;
+	-fx-font-size: 16px;
+	 
+	
+}
+#botongrid {
+	-fx-font-size:26px;
+	-fx-background-color: coral;
+	
+}

@@ -1,0 +1,35 @@
+.root {
+	-fx-font-family: 'Ubuntu';
+    -fx-font-size:   13px;
+	
+}
+.label {
+	-fx-text-fill: blue  ;
+	 
+}
+
+.button {
+	-fx-text-fill: rgb(66,83,72) ;
+	-fx-border-radius: 3px;
+	-fx-background-color:  #ccffcc;
+}
+
+
+#paneluno {
+	-fx-border-color: rgb(0,0,128);
+	-fx-border-width: 2px;
+	
+}
+
+.button-anchor {
+	-fx-text-fill: white  ;
+	-fx-border-radius: 2px;
+	-fx-background-color:  coral;
+	 
+} 
+
+.label-centro {
+	 -fx-text-fill: gray  ;
+	 
+} 
+ 

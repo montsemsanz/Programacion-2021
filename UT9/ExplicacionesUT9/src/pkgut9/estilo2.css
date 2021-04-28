@@ -1,0 +1,26 @@
+.root {
+	-fx-font-family: 'Ubuntu';
+    -fx-font-size:   13px;   
+	
+}
+ 
+
+.button {
+	-fx-text-fill: rgb(66,83,72) ;
+	-fx-border-radius: 3px;
+	-fx-background-color:  #ccffcc;
+}
+
+#btndos {
+	-fx-background-color:  chocolate ;
+	-fx-text-fill: white ;
+	-fx-font-size:   22px;
+	
+}
+#paneluno {
+	-fx-border-color: rgb(0,0,128);
+	-fx-border-width: 2px;
+	
+}
+ 
+ 
