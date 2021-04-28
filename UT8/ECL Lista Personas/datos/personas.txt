@@ -1,0 +1,5 @@
+Pepe:34:s
+Ana:14:c
+Luis:23:s
+Juan:50:d
+Elena:22:s
