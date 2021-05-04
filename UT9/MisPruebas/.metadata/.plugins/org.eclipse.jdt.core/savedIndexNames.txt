@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\__DiscoDatos\__Curso 2018-2019\_Ciclo DAM-DAW Mod PROGRAMACION 2018-2019\Unidades Trabajo\UT9\masPruebas\MisPruebas\.metadata\.plugins\org.eclipse.jdt.core
