@@ -1,0 +1,65 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	-fx-background-color: black ;
+	 
+}
+.button {
+	-fx-background-color: crimson  ;
+	-fx-text-fill: white;
+} 
+.button:hover {
+	-fx-background-color: darkmagenta   ;
+	 
+} 
+
+#panel-central {
+	-fx-background-color: bisque   ;
+	 
+} 
+.label {
+	-fx-background-color: burlywood   ;
+	-fx-padding: 8px;
+	-fx-font-size: 28;
+	-fx-font-weight: bold;
+	
+}
+.vbox, .hbox {
+	-fx-background-color: cornflowerblue    ;
+}
+.gridpane{
+	-fx-background-color: floralwhite    ;
+}
+
+.menu-bar {
+	-fx-border-color: red     ;
+}
+
+.menu-bar, .menu{
+	-fx-background-color: transparent      ;
+}
+
+
+.menu .label {
+	-fx-background-color: transparent     ;
+	-fx-font-size: 12;
+	-fx-text-fill: white ;
+}
+
+.menu-item .label {
+	-fx-background-color: transparent     ;
+	-fx-font-size: 12;
+	-fx-text-fill: black ;
+}
+
+#barraTitulo {
+	-fx-background-color: lightgrey      ;
+}
+
+#barraTitulo .button {
+	-fx-background-color:  grey      ;
+}
+
+.check-box {
+	-fx-text-fill: white ;
+}
