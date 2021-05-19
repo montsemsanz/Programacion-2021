@@ -143,7 +143,7 @@ public class PersonaDao {
 			String sql = "DELETE FROM personas WHERE UPPER(apellido) LIKE ?";
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setString(1, "%" + apellido.toUpperCase() + "%");
-			System.out.println(pst.toString());
+//			System.out.println(pst.toString());
 			pst.executeUpdate();
 
 			pst.close();
@@ -168,7 +168,7 @@ public class PersonaDao {
 			String sql = "DELETE FROM personas WHERE idPersona = ?";
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setInt(1, id);
-			System.out.println(pst.toString());
+//			System.out.println(pst.toString());
 			pst.executeUpdate();
 
 			pst.close();
