@@ -182,4 +182,28 @@ public class PersonaDao {
 		}
 	}
 
+	/**
+	 * 
+	 * borrar las personas con un determinado estado civil
+	 * 
+	 */
+	public void borrarPersonasDeEstadoCivil(char c) {
+		try {
+			Connection con = Conexion.getConexion();
+			String sql = "DELETE FROM personas WHERE eCivil = ?";
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setString(1, String.valueOf(c));
+			pst.executeUpdate();
+			pst.close();
+		}
+		catch (SQLException e) {
+			System.out.println("SQL Exception:" + e.getMessage());
+
+		}
+		catch (Exception e) {
+			System.out.println("SQL Exception:" + e.getMessage());
+		}
+
+	}
+
 }

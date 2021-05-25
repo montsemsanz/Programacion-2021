@@ -16,7 +16,8 @@ public class Interfaz {
 	private static final int GUARDAR_PERSONA = 3;
 	private static final int BORRAR_PERSONA_POR_APELLIDO = 4;
 	private static final int BORRAR_PERSONA_POR_ID = 5;
-	private static final int SALIR = 6;
+	private static final int BORRAR_PERSONA_POR_ECIVIL = 6;
+	private static final int SALIR = 7;
 
 	private Scanner teclado;
 	private PersonaDao dao;
@@ -45,6 +46,9 @@ public class Interfaz {
 				case BORRAR_PERSONA_POR_ID:
 					borrarPersonaPorId();
 					break;
+				case BORRAR_PERSONA_POR_ECIVIL:
+					borrarPersonaPorECivil();
+					break;
 
 			}
 			opcion = menu();
@@ -62,7 +66,8 @@ public class Interfaz {
 		System.out.println(" 3.- Guardar persona");
 		System.out.println(" 4.- Borrar persona por apellido");
 		System.out.println(" 5.- Borrar persona por id");
-		System.out.println(" 6.- Salir");
+		System.out.println(" 6.- Borrar persona por estado civil");
+		System.out.println(" 7.- Salir");
 		System.out.println(" Teclea opción....");
 		int opcion = teclado.nextInt();
 
@@ -137,6 +142,14 @@ public class Interfaz {
 		System.out.println("Introduzca el id de la persona a borrar de la BD: ");
 		int id = teclado.nextInt();
 		dao.borrarPersonaPorId(id);
+
+	}
+
+	private void borrarPersonaPorECivil() {
+		teclado.nextLine();
+		System.out.println("Introduzca el estado civil de la persona a borrar de la BD: ");
+		char estado = teclado.nextLine().charAt(0);
+		dao.borrarPersonasDeEstadoCivil(estado);
 
 	}
 
