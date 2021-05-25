@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+root {
+	-fx-background-color: aliceblue; 
+	
+}
+
+.vbox {
+	
+	-fx-border-width: 2px;
+	-fx-background-color: lightyellow     ;
+	 
+}
+.titulo {
+	-fx-background-color:#32AAF7;	 
+	-fx-font-size: 20;
+	-fx-font-family: "Pt sans narrow";
+	-fx-padding: 1px;
+	-fx-alignment: center;
+	-fx-text-fill: white ;
+	 
+	 
+}
+
+.button {
+	-fx-background-color: #32AAF7;	 
+	-fx-border-radius: 3px;
+	-fx-border-color: #1D92DD;
+}
+
+
+.text-area {
+ 
+	-fx-font-size: 13px;
+}
+
+.text-area .content{
+  -fx-background-color: white ;
+}
+
+.label, radio-button, check-box {
+	 
+}
